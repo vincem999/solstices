@@ -146,12 +146,19 @@ import Layout from '../layouts/Layout.astro'
   <div style="border-top: 2px solid black; width: 70%; margin: auto"></div>
   <div class="container">
     <div style="display: flex;">
-      <h3>Instagram</h3>
-      <h3>solstices-ateliers@gmail.com</h3>
+      <h3><a href="https://www.instagram.com/solstices__ateliers/" target="_blank">Instagram</a></h3>
+      <h3 style="margin-left: auto; margin-right: auto;">
+        <a href="mailto:solstices-ateliers@gmail.com">solstices-ateliers@gmail.com</a>
+      </h3>
     </div>
-    <div>
-      <p>©2024 Solstices ateliers singuliers.</p>
-      <p>Conditions Générales de Vente — Politique de Confidentialité</p>
+    <div style="display: flex; gap: 50px">
+      <div>
+        <p style="font-size: 1.5vw">©2024 Solstices ateliers singuliers.</p>
+        <p style="font-size: 1.5vw">Conditions Générales de Vente — Politique de Confidentialité</p>
+      </div>
+      <div style="align-self: flex-end; flex-grow: 1; text-align: end">
+        <p style="font-size: 1.5vw">Website par Vincent Monneger</p>
+      </div>
     </div>
   </div>
 </Layout>
@@ -346,5 +353,29 @@ import Layout from '../layouts/Layout.astro'
 
   .btn-reservation-fixed:hover {
     background: #e27a63;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+  }
+
+  a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
   }
 </style>
