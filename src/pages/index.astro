@@ -132,7 +132,7 @@ import logo_SC from '../images/logo_SC.png'
     </div>
     <div class="container scroll-container">
       <div class="sticky-wrap">
-        <div class="horizontal_scroll">
+        <div class="horizontal_scroll" style="width: 600vw">
           <div class="scroll-contents">
             <Picture src={EMMB1682} decoding="sync" loading="eager" alt="les_animatrices" class="img-scroll" />
           </div>
@@ -654,6 +654,12 @@ import logo_SC from '../images/logo_SC.png'
   }
   .footer-details p {
     font-size: 1.5vw;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .btn-reservation.visible:hover {
+      background: red;
+    }
   }
 
   @media (max-width: 768px) {
