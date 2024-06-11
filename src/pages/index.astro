@@ -354,7 +354,7 @@ import logo_SC from '../images/logo_SC.png'
 
     let currentIndex = 0
 
-    function showSlides(n) {
+    function showSlides(n: number) {
       let slides = document.getElementsByClassName('carousel-item')
       if (n >= slides.length) {
         currentIndex = 0
@@ -368,7 +368,7 @@ import logo_SC from '../images/logo_SC.png'
       slides[currentIndex].classList.add('active')
     }
 
-    function moveSlide(n) {
+    function moveSlide(n: number) {
       showSlides((currentIndex += n))
     }
 
@@ -376,11 +376,11 @@ import logo_SC from '../images/logo_SC.png'
     showSlides(currentIndex)
 
     // Add event listeners
-    document.getElementById('prevButton').addEventListener('click', function () {
+    document.getElementById('prevButton')?.addEventListener('click', function () {
       moveSlide(-1)
     })
 
-    document.getElementById('nextButton').addEventListener('click', function () {
+    document.getElementById('nextButton')?.addEventListener('click', function () {
       moveSlide(1)
     })
   })
