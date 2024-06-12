@@ -111,13 +111,13 @@ import logo_SC from '../images/logo_SC.png'
         <div class="card">
           <h1 style="margin-bottom: 25px">Au programme</h1>
           <div style="display: flex; flex-direction: column; gap: 20px;">
-            <p>☀️ Méditation d'ancrage</p>
-            <p>☀️ Éveil corporel</p>
-            <p>☀️ Atelier d'introspection (écriture, dessin...)</p>
-            <p>☀️ Cercles de partages</p>
-            <p>☀️ Atelier matières et création d'objet</p>
-            <p>☀️ Immersion nature et découverte des alentours</p>
-            <p>☀️ Apéros dinatoires & plus si affinités :)</p>
+            <p class="text-card">☀️ <span>Méditation d'ancrage</span></p>
+            <p class="text-card">☀️ <span>Éveil corporel</span></p>
+            <p class="text-card">☀️ <span>Atelier d'introspection (écriture, dessin...)</span></p>
+            <p class="text-card">☀️ <span>Cercles de partages</span></p>
+            <p class="text-card">☀️ <span>Atelier matières et création d'objet</span></p>
+            <p class="text-card">☀️ <span>Immersion nature et découverte des alentours</span></p>
+            <p class="text-card">☀️ <span>Apéros dinatoires & plus si affinités :)</span></p>
           </div>
         </div>
       </div>
@@ -256,12 +256,36 @@ import logo_SC from '../images/logo_SC.png'
         <h1 style="margin-bottom: 25px">Tarifs et réservation</h1>
         <p class="tarif-font">€ 295,00</p>
         <div style="display: flex; flex-direction: column; gap: 20px;">
-          <p>01 . Hébergement 2 nuits</p>
-          <p>02 . 1/2 journée d’ateliers développement personnel</p>
-          <p>03 . 1/2 journée d’ateliers créatifs</p>
-          <p>04 . Repas inclus (bio & local) et boissons (vins natures)</p>
-          <p>05 . Activités bien-être</p>
-          <p>06 . Matériaux objets et carnet de route coaching personnalisé</p>
+          <div style="display: flex; gap: 5px">
+            <p style="flex: none">01 .</p>
+            <p>Hébergement 2 nuits</p>
+          </div>
+          <div style="display: flex; gap: 5px">
+            <p style="flex: none">02 .</p>
+            <p>1/2 journée d’ateliers développement personnel</p>
+          </div>
+          <div style="display: flex; gap: 5px">
+            <p style="flex: none">03 .</p>
+            <p>1/2 journée d’ateliers créatifs</p>
+          </div>
+          <div style="display: flex; gap: 5px">
+            <p style="flex: none">04 .</p>
+            <p>Repas inclus (bio & local) et boissons (vins natures)</p>
+          </div>
+          <div style="display: flex; gap: 5px">
+            <p style="flex: none">05 .</p>
+            <p>Activités bien-être</p>
+          </div>
+          <div style="display: flex; gap: 5px">
+            <p style="flex: none">06 .</p>
+            <p>Matériaux objets et carnet de route coaching personnalisé</p>
+          </div>
+          <!-- <p class="text-card">01 . <span>Hébergement 2 nuits</span></p>
+          <p class="text-card">02 . <span>1/2 journée d’ateliers développement personnel</span></p>
+          <p class="text-card">03 . <span>1/2 journée d’ateliers créatifs</span></p>
+          <p class="text-card">04 . <span>Repas inclus (bio & local) et boissons (vins natures)</span></p>
+          <p class="text-card">05 . <span>Activités bien-être</span></p>
+          <p class="text-card">06 . <span>Matériaux objets et carnet de route coaching personnalisé</span></p> -->
         </div>
       </div>
     </div>
@@ -399,6 +423,10 @@ import logo_SC from '../images/logo_SC.png'
 </script>
 
 <style>
+  .text-card {
+    display: flex;
+    gap: 5px;
+  }
   .tarif-font {
     margin-bottom: 30px;
   }
@@ -500,7 +528,7 @@ import logo_SC from '../images/logo_SC.png'
 
   .img-scroll {
     height: 90vh;
-    width: 50vw;
+    width: 75vw;
     object-position: center;
     object-fit: contain;
   }
@@ -706,6 +734,9 @@ import logo_SC from '../images/logo_SC.png'
     .carousel-item {
       height: 750px;
     }
+    /* .img-scroll {
+      width: 75vw;
+    } */
   }
 
   @media (min-width: 769px) and (max-width: 1200px) {
