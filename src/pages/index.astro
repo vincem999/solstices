@@ -24,7 +24,7 @@ import EBNN1754 from '../images/EBNN1754.webp'
 import EMMB1784 from '../images/EMMB1784.webp'
 import EMMB1682 from '../images/EMMB1682.webp'
 import logo from '../images/solstices.svg'
-import logo_SC from '../images/logo_SC.png'
+import logo_SC from '../images/logSC_reca.webp'
 ---
 
 <Layout title="Solstices">
@@ -34,7 +34,7 @@ import logo_SC from '../images/logo_SC.png'
     </div>
     <section style="height: 100vh; display: flex; flex-direction: column">
       <div style="display: flex; justify-content: center;">
-        <Image id="logo" src={logo} alt="logo_solstices" class="responsive-image" />
+        <Image id="logo" src={logo} alt="logo_solstices" class="logo-main" />
       </div>
       <div class="container" style="height: 100%">
         <div style="display: flex; justify-content: center;">
@@ -44,11 +44,14 @@ import logo_SC from '../images/logo_SC.png'
         </div>
         <div style="height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
           <div class="circle-hero-section">
-            <p style="font-weight: 600">du 21 au 23 Juin 2024</p>
-            <p>“Les 1001 PREMIERS JOURS”</p>
-            <p>Voyage éclairé dans la parentalité: le post-partum</p>
-            <p style="font-weight: 600">Week-end retraite</p>
-            <p style="font-weight: 600">à 1h30 de Marseille</p>
+            <Image id="logo" src={logo_SC} alt="logo_solstices" class="logo-sc" />
+            <div class="container-logo">
+              <p class="title-logo">du 21 au 23 Juin 2024</p>
+              <p class="text-logo">“Les 1001 PREMIERS JOURS”</p>
+              <p class="text-logo">Voyage éclairé dans la parentalité: le post-partum</p>
+              <p class="text-logo">Week-end retraite</p>
+              <p class="text-logo">à 1h30 de Marseille</p>
+            </div>
           </div>
         </div>
       </div>
@@ -421,6 +424,22 @@ import logo_SC from '../images/logo_SC.png'
 </script>
 
 <style>
+  .container-logo {
+    padding: 10px;
+    color: white;
+  }
+  .logo-sc {
+    width: 150px;
+    height: auto;
+  }
+  .title-logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .text-logo {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
   .text-card {
     display: flex;
     gap: 5px;
@@ -637,12 +656,12 @@ import logo_SC from '../images/logo_SC.png'
     padding-bottom: 40px;
   }
 
-  .responsive-image {
+  .logo-main {
     max-width: 100%;
     height: auto;
     display: block;
     width: 800px;
-    height: 280px;
+    height: 200px;
   }
 
   section {
@@ -705,7 +724,7 @@ import logo_SC from '../images/logo_SC.png'
       font-size: 20px !important;
     }
 
-    .responsive-image {
+    .logo-main {
       height: 190px;
       width: 500px;
     }
@@ -742,23 +761,32 @@ import logo_SC from '../images/logo_SC.png'
       font-size: 2.5rem;
     }
     .circle-hero-section {
-      width: 500px;
-      height: 500px;
+      width: 450px;
+      height: 450px;
     }
     .container-text {
       width: 80%;
       padding: 150px 0;
     }
-    .responsive-image {
+    .logo-main {
       height: 160px;
       width: 760px;
     }
-    /* .btn-reservation {
-      height: 163px;
+    .logo-sc {
+      width: 200px;
+      height: auto;
     }
-    .btn-reservation p {
-      font-size: 26px !important;
-    } */
+    .title-logo {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+    .text-logo {
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+    .container-logo {
+      padding: 40px;
+    }
   }
 
   @media (min-width: 1201px) {
@@ -779,6 +807,21 @@ import logo_SC from '../images/logo_SC.png'
     }
     .photo-main {
       min-height: 100vh;
+    }
+    .logo-sc {
+      width: 250px;
+      height: auto;
+    }
+    .title-logo {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+    .text-logo {
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+    .container-logo {
+      padding: 40px;
     }
   }
 </style>
