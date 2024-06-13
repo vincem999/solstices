@@ -298,7 +298,7 @@ import logo_SC from '../images/logSC_reca.webp'
   </main>
   <div class="footer-line" style="border-top: 2px solid black; width: 70%; margin: auto"></div>
   <div class="container">
-    <div style="display: flex; flex-wrap: wrap; gap: 0px 100px">
+    <div style="display: flex; flex-wrap: wrap; gap: 0px 100px; justify-content: space-around; margin-bottom: 15px">
       <h3><a href="https://www.instagram.com/solstices__ateliers/" target="_blank">Instagram</a></h3>
       <h3>
         <a href="mailto:solstices-ateliers@gmail.com">solstices.ateliers@gmail.com</a>
@@ -545,7 +545,8 @@ import logo_SC from '../images/logSC_reca.webp'
 
   .img-scroll {
     height: 90vh;
-    width: 75vw;
+    width: 85vw;
+    /* width: 75vw; */
     object-position: center;
     object-fit: contain;
   }
@@ -675,12 +676,6 @@ import logo_SC from '../images/logSC_reca.webp'
     font-size: 1.5vw;
   }
 
-  @media (hover: hover) and (pointer: fine) {
-    .btn-reservation.visible:hover {
-      background: red;
-    }
-  }
-
   @media (max-width: 768px) {
     .tarif-font {
       font-size: 2rem;
@@ -741,9 +736,6 @@ import logo_SC from '../images/logSC_reca.webp'
     .footer-details {
       display: block;
     }
-    .footer-details div:last-child {
-      text-align: start !important;
-    }
 
     .footer-details p {
       font-size: 12px;
@@ -751,9 +743,9 @@ import logo_SC from '../images/logSC_reca.webp'
     .carousel-item {
       height: 750px;
     }
-    /* .img-scroll {
-      width: 75vw;
-    } */
+    .img-scroll {
+      width: 72vw;
+    }
   }
 
   @media (min-width: 769px) and (max-width: 1200px) {
